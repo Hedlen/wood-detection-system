@@ -1,0 +1,14 @@
+# Package Information for pkg-config
+
+prefix=/usr/local/opencv-3.0.0
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir_old=${prefix}/include/opencv
+includedir_new=${prefix}/include
+
+Name: OpenCV
+Description: Open Source Computer Vision Library
+Version: 3.0.0
+Libs: -L${exec_prefix}/lib -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core -lopencv_hal
+Libs.private: -L/home/jiangting/anaconda3/lib -lQt5Core -lQt5Gui -lQt5Widgets -lQt5Test -lQt5Concurrent -lQt5OpenGL -lpng -lz -ltiff -L/usr/lib/x86_64-linux-gnu -ljasper -ljpeg -lImath -lIlmImf -lIex -lHalf -lIlmThread -ldc1394 -lv4l1 -lv4l2 -lavcodec-ffmpeg -lavformat-ffmpeg -lavutil-ffmpeg -lswscale-ffmpeg -lbz2 -ldl -lm -lpthread -lrt -lGLU -lGL -ltbb -latomic
+Cflags: -I${includedir_old} -I${includedir_new}

@@ -1,0 +1,2 @@
+model.pth filter=lfs diff=lfs merge=lfs -text
+librealsense/librealsense2.so.2.26 filter=lfs diff=lfs merge=lfs -text
