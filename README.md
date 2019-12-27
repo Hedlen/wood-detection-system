@@ -137,7 +137,7 @@ python run_demo.py
 
 # 界面展示
 
-![木头检测系统](ui/ui.jpeg)
+![木头检测系统](ui/ui.png)
 
 
 
